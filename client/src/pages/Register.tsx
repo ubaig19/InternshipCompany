@@ -61,8 +61,8 @@ export default function Register() {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4">
-      <div className="max-w-md w-full mx-auto">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white flex flex-col items-center justify-center px-4">
+      <div className="max-w-md w-full mx-auto bg-white p-8 rounded-xl shadow-md border border-gray-100">
         <div className="text-center mb-8">
           <div className="flex justify-center items-center">
             <Briefcase className="h-12 w-12 text-primary" />
