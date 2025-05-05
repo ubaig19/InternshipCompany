@@ -21,46 +21,36 @@ import Sidebar from "./components/Sidebar";
 import { useEffect, useState } from "react";
 
 function Router() {
+  // TEMPORARY SIMPLIFIED ROUTER FOR DEBUGGING
   const { user, isLoading } = useAuth();
   const [location, setLocation] = useLocation();
-
-  // Redirect based on authentication status
-  useEffect(() => {
-    if (!isLoading) {
-      if (!user && !location.startsWith("/auth")) {
-        console.log('No user found, redirecting to login');
-        setLocation("/auth/login");
-      } else if (
-        user &&
-        (location === "/auth/login" || location === "/auth/register")
-      ) {
-        // Redirect to appropriate dashboard based on role
-        console.log('User found, redirecting to dashboard');
-        if (user.role === "candidate") {
-          setLocation("/candidate/dashboard");
-        } else if (user.role === "employer") {
-          setLocation("/employer/dashboard");
-        }
-      }
-    }
-  }, [user, isLoading, location, setLocation]);
-
-  // Don't show loading indefinitely - if we're still loading after 2 seconds, just show the login page
-  const [showLogin, setShowLogin] = useState(false);
   
+  console.log('App state:', { isLoading, user: user?.email, location });
+  
+  // After 1 second, force the app to render Login regardless of auth state
   useEffect(() => {
-    if (isLoading) {
-      const timer = setTimeout(() => {
-        setShowLogin(true);
-      }, 2000);
-      return () => clearTimeout(timer);
-    } else {
-      setShowLogin(false);
-    }
-  }, [isLoading]);
-
-  if (isLoading && !showLogin) {
-    return <div className="flex h-screen items-center justify-center">Loading...</div>;
+    const timer = setTimeout(() => {
+      if (location !== '/auth/login' && location !== '/auth/register') {
+        console.log('FORCING REDIRECT TO LOGIN PAGE');
+        setLocation('/auth/login');
+      }
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [location, setLocation]);
+  
+  // Simple loading state
+  if (isLoading && location !== '/auth/login' && location !== '/auth/register') {
+    return <div className="flex h-screen items-center justify-center">
+      <div className="text-center">
+        <div className="mb-4">Loading...</div>
+        <button 
+          onClick={() => setLocation('/auth/login')} 
+          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >
+          Go to Login
+        </button>
+      </div>
+    </div>;
   }
 
   return (
