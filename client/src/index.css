@@ -5,20 +5,20 @@
 :root {
   --background: 0 0% 100%;
   --foreground: 20 14.3% 4.1%;
-  --muted: 60 4.8% 95.9%;
-  --muted-foreground: 25 5.3% 44.7%;
+  --muted: 220 13% 91%;
+  --muted-foreground: 220 10% 25%; /* Darker for better legibility */
   --popover: 0 0% 100%;
   --popover-foreground: 20 14.3% 4.1%;
   --card: 0 0% 100%;
   --card-foreground: 20 14.3% 4.1%;
-  --border: 20 5.9% 90%;
-  --input: 20 5.9% 90%;
+  --border: 220 13% 75%; /* Darker border for better visibility */
+  --input: 220 13% 85%;  /* Darker input fill for better legibility */
   --primary: 220 79% 47%;
   --primary-foreground: 211 100% 99%;
-  --secondary: 60 4.8% 95.9%;
-  --secondary-foreground: 24 9.8% 10%;
-  --accent: 60 4.8% 95.9%;
-  --accent-foreground: 24 9.8% 10%;
+  --secondary: 220 13% 85%;
+  --secondary-foreground: 220 70% 20%; /* Higher contrast */
+  --accent: 220 13% 92%;
+  --accent-foreground: 220 70% 25%; /* Higher contrast */
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 60 9.1% 97.8%;
   --ring: 20 14.3% 4.1%;
@@ -32,9 +32,9 @@
   --sidebar-foreground: 20 14.3% 4.1%;
   --sidebar-primary: 220 79% 47%;
   --sidebar-primary-foreground: 211 100% 99%;
-  --sidebar-accent: 60 4.8% 95.9%;
-  --sidebar-accent-foreground: 24 9.8% 10%;
-  --sidebar-border: 20 5.9% 90%;
+  --sidebar-accent: 220 13% 92%;
+  --sidebar-accent-foreground: 220 70% 25%;
+  --sidebar-border: 220 13% 75%;
   --sidebar-ring: 20 14.3% 4.1%;
 }
 

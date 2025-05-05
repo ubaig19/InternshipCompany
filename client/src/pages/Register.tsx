@@ -68,7 +68,7 @@ export default function Register() {
             <Briefcase className="h-12 w-12 text-primary" />
           </div>
           <h1 className="text-2xl font-medium mt-4">Create an Account</h1>
-          <p className="text-neutral-medium mt-2">Join InternInvitePortal today</p>
+          <p className="text-slate-700 mt-2">Join InternInvitePortal today</p>
         </div>
 
         <Form {...form}>
@@ -164,9 +164,9 @@ export default function Register() {
         </Form>
 
         <div className="mt-8 text-center">
-          <p className="text-neutral-medium">
+          <p className="text-slate-700">
             Already have an account?{" "}
-            <Link href="/auth/login" className="text-primary hover:underline">
+            <Link href="/auth/login" className="text-primary font-medium hover:underline">
               Sign in
             </Link>
           </p>

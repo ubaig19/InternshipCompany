@@ -51,7 +51,7 @@ export default function Login() {
             <Briefcase className="h-12 w-12 text-primary" />
           </div>
           <h1 className="text-2xl font-medium mt-4">Welcome to InternInvitePortal</h1>
-          <p className="text-neutral-medium mt-2">Sign in to your account</p>
+          <p className="text-slate-700 mt-2">Sign in to your account</p>
         </div>
 
         <Form {...form}>
@@ -126,9 +126,9 @@ export default function Login() {
         </Form>
 
         <div className="mt-8 text-center">
-          <p className="text-neutral-medium">
+          <p className="text-slate-700">
             Don't have an account?{" "}
-            <Link href="/auth/register" className="text-primary hover:underline">
+            <Link href="/auth/register" className="text-primary font-medium hover:underline">
               Sign up
             </Link>
           </p>
