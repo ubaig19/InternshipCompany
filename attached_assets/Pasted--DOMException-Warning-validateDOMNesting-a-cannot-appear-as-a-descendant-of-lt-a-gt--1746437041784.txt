@@ -1,0 +1,22 @@
+
+DOMException {}
+
+Warning: validateDOMNesting(...): <a> cannot appear as a descendant of &lt;a&gt;.
+    at a
+    at a
+    at https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=4375e3ba:337:18
+    at p
+    at div
+    at div
+    at div
+    at Login (https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/src/pages/Login.tsx:42:32)
+    at Route (https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=4375e3ba:323:16)
+    at Switch (https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=4375e3ba:379:17)
+    at Router (https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/src/App.tsx?v=6GioYs1Gz0QZimba_XU38:39:31)
+    at Provider (https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=4375e3ba:38:15)
+    at TooltipProvider (https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=4375e3ba:64:5)
+    at App
+    at AuthProvider (https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/src/contexts/AuthContext.tsx?v=6GioYs1Gz0QZimba_XU38:31:32)
+    at V (https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/next-themes.js?v=4375e3ba:44:25)
+    at J (https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/next-themes.js?v=4375e3ba:42:18)
+    at QueryClientProvider (https://36e097ff-f1cf-4369-a59e-077e16cdcee7-00-dzmwfiqt1imd.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=4375e3ba:2805:3)

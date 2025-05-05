@@ -128,8 +128,8 @@ export default function Login() {
         <div className="mt-8 text-center">
           <p className="text-neutral-medium">
             Don't have an account?{" "}
-            <Link href="/auth/register">
-              <a className="text-primary hover:underline">Sign up</a>
+            <Link href="/auth/register" className="text-primary hover:underline">
+              Sign up
             </Link>
           </p>
         </div>
