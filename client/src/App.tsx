@@ -27,16 +27,10 @@ function Router() {
   
   console.log('App state:', { isLoading, user: user?.email, location });
   
-  // After 1 second, force the app to render Login regardless of auth state
+  // For debugging purposes
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (location !== '/auth/login' && location !== '/auth/register') {
-        console.log('FORCING REDIRECT TO LOGIN PAGE');
-        setLocation('/auth/login');
-      }
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, [location, setLocation]);
+    console.log('Current location:', location);
+  }, [location]);
   
   // Simple loading state
   if (isLoading && location !== '/auth/login' && location !== '/auth/register') {

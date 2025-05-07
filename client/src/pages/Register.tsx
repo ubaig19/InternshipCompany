@@ -82,7 +82,9 @@ export default function Register() {
                   <FormControl>
                     <Input 
                       placeholder="your@email.com" 
+                      type="email"
                       {...field} 
+                      value={field.value || ""}
                       disabled={isLoading}
                     />
                   </FormControl>
@@ -101,6 +103,7 @@ export default function Register() {
                     <Input 
                       type="password" 
                       {...field} 
+                      value={field.value || ""}
                       disabled={isLoading}
                     />
                   </FormControl>
@@ -119,6 +122,7 @@ export default function Register() {
                     <Input 
                       type="password" 
                       {...field} 
+                      value={field.value || ""}
                       disabled={isLoading}
                     />
                   </FormControl>

@@ -65,7 +65,9 @@ export default function Login() {
                   <FormControl>
                     <Input 
                       placeholder="your@email.com" 
+                      type="email"
                       {...field} 
+                      value={field.value || ""}
                       disabled={isLoading}
                     />
                   </FormControl>
@@ -84,6 +86,7 @@ export default function Login() {
                     <Input 
                       type="password" 
                       {...field} 
+                      value={field.value || ""}
                       disabled={isLoading}
                     />
                   </FormControl>
