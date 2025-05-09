@@ -6,7 +6,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import { useAuth } from "./hooks/useAuth";
 import Login from "@/pages/Login";
+import SimpleLogin from "./pages/SimpleLogin";
 import Register from "@/pages/Register";
+import SimpleRegister from "./pages/SimpleRegister";
 import CandidateDashboard from "@/pages/candidate/Dashboard";
 import CandidateProfile from "@/pages/candidate/Profile";
 import CandidateMessages from "@/pages/candidate/Messages";
@@ -50,8 +52,8 @@ function Router() {
   return (
     <Switch>
       {/* Public routes */}
-      <Route path="/auth/login" component={Login} />
-      <Route path="/auth/register" component={Register} />
+      <Route path="/auth/login" component={SimpleLogin} />
+      <Route path="/auth/register" component={SimpleRegister} />
 
       {/* Protected candidate routes */}
       <Route path="/candidate/dashboard">
