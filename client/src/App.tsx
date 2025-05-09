@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import { useAuth } from "./hooks/useAuth";
 import Login from "@/pages/Login";
 import SimpleLogin from "./pages/SimpleLogin";
+import TestLogin from "./pages/TestLogin";
 import Register from "@/pages/Register";
 import SimpleRegister from "./pages/SimpleRegister";
 import CandidateDashboard from "@/pages/candidate/Dashboard";
@@ -52,7 +53,7 @@ function Router() {
   return (
     <Switch>
       {/* Public routes */}
-      <Route path="/auth/login" component={SimpleLogin} />
+      <Route path="/auth/login" component={TestLogin} />
       <Route path="/auth/register" component={SimpleRegister} />
 
       {/* Protected candidate routes */}
